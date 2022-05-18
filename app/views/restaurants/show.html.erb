@@ -1,0 +1,13 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @restaurant %>
+
+<div>
+  <%= link_to "Add a review", new_restaurant_review_path(params[:id]) %>
+  <br>
+  <%= link_to "Edit this restaurant", edit_restaurant_path(@restaurant) %> |
+  <br>
+  <%= link_to "Back to restaurants", restaurants_path %>
+<br>
+  <%= button_to "Destroy this restaurant", @restaurant, method: :delete %>
+</div>
